@@ -1,10 +1,10 @@
-# Bhavik · TFG Financial Services Voice Demo
+# Lethabo · TFG Financial Services Voice Demo
 
-A Next.js webapp that demos **Bhavik**, the TFG Financial Services voice agent,
+A Next.js webapp that demos **Lethabo**, the TFG Financial Services voice agent,
 across two scenarios:
 
-1. **Collections Outbound** — Bhavik calling a customer in arrears.
-2. **Customer Service 24/7** — Bhavik handling routine inbound enquiries.
+1. **Collections Outbound** — Lethabo calling a customer in arrears.
+2. **Customer Service 24/7** — Lethabo handling routine inbound enquiries.
 
 Built on Next.js 15 (App Router) + Tailwind + the
 [`ultravox-client`](https://www.npmjs.com/package/ultravox-client) SDK.
@@ -34,7 +34,7 @@ npm run dev
 Open http://localhost:3000 and:
 1. Click a scenario card.
 2. Allow the microphone prompt.
-3. Click **Start conversation with Bhavik**.
+3. Click **Start conversation with Lethabo**.
 
 > The first time the page calls `/api/ultravox`, your server creates an
 > Ultravox call and returns a `joinUrl`. The browser then opens a WebRTC
@@ -42,11 +42,11 @@ Open http://localhost:3000 and:
 
 ---
 
-## 3. Customising Bhavik
+## 3. Customising Lethabo
 
 All persona + scenario prompts live in **`lib/scenarios.ts`**.
 Edit `SCENARIOS.collections.systemPrompt` or `SCENARIOS["customer-service"].systemPrompt`
-to change Bhavik's behaviour.
+to change Lethabo's behaviour.
 
 To use a different voice, change the `voice` field. You can browse voices in
 the Ultravox console or list them via the API. Examples: `Mark`, `Jessica`,
@@ -78,7 +78,7 @@ That's it — your demo is live.
 ## 5. Project structure
 
 ```
-bhavik-tfg/
+Lethabo-tfg/
 ├── app/
 │   ├── api/ultravox/route.ts   ← server: creates Ultravox calls
 │   ├── call/page.tsx           ← the call experience
@@ -89,7 +89,7 @@ bhavik-tfg/
 │   ├── CallStage.tsx           ← Ultravox session + transcripts UI
 │   └── TFGMark.tsx
 ├── lib/
-│   └── scenarios.ts            ← system prompts for Bhavik
+│   └── scenarios.ts            ← system prompts for Lethabo
 ├── tailwind.config.ts
 └── package.json
 ```
@@ -104,7 +104,7 @@ This is a **demo**. Before letting real customers near it:
   numbers or full card numbers** by voice.
 - Log every call with a clear consent prompt at the start ("This call is being
   recorded and may be used to train AI…").
-- Add **Ultravox tools** for the things Bhavik shouldn't fake — looking up a
+- Add **Ultravox tools** for the things Lethabo shouldn't fake — looking up a
   real account balance, scheduling a real payment, etc. See
   https://docs.ultravox.ai for the tool-calling spec.
 - For outbound calls at scale, wire Ultravox to Twilio or another SIP carrier

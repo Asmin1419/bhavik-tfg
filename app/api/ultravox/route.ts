@@ -39,7 +39,7 @@ export async function POST(req: NextRequest) {
       medium: { webRtc: {} },
       // Useful metadata for analytics in the Ultravox console
       metadata: {
-        product: "bhavik-tfg",
+        product: "Lethabo-tfg",
         scenario: config.key,
         region: "ZA",
         language: "en",

@@ -22,7 +22,7 @@ export default async function CallPage({
               TFG Financial Services
             </div>
             <div className="eyebrow text-aubergine-600">
-              Bhavik · {scenario.title}
+              Lethabo · {scenario.title}
             </div>
           </div>
         </Link>

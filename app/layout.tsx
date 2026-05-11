@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Bhavik · TFG Financial Services",
+  title: "Lethabo · TFG Financial Services",
   description:
-    "Bhavik — the voice of TFG Financial Services. A conversational AI built for South African customers, available around the clock.",
+    "Lethabo — the voice of TFG Financial Services. A conversational AI built for South African customers, available around the clock.",
 };
 
 export default function RootLayout({

@@ -147,13 +147,13 @@ export function CallStage({
                   <li>· Answer as the account holder, &ldquo;Thandi Mokoena&rdquo;.</li>
                   <li>· Try giving the last 4 digits of an ID: <span className="font-mono">3214</span>.</li>
                   <li>· Negotiate a payment date later this month.</li>
-                  <li>· Push back on the amount — see how Bhavik handles it.</li>
+                  <li>· Push back on the amount — see how Lethabo handles it.</li>
                 </>
               ) : (
                 <>
                   <li>· Ask &ldquo;what&apos;s my account balance?&rdquo;</li>
                   <li>· Try &ldquo;when is my next payment due?&rdquo;</li>
-                  <li>· Ask Bhavik to update your mobile number.</li>
+                  <li>· Ask Lethabo to update your mobile number.</li>
                   <li>· Ask something out of scope — see the handover.</li>
                 </>
               )}
@@ -173,7 +173,7 @@ export function CallStage({
                 </span>
               </div>
               <span className="eyebrow text-ink/40">
-                Bhavik · ZA / EN
+                Lethabo · ZA / EN
               </span>
             </div>
 
@@ -199,7 +199,7 @@ export function CallStage({
                 >
                   <span className="h-2 w-2 rounded-full bg-rust" />
                   <span className="font-sans text-[15px] font-medium tracking-tight">
-                    Start conversation with Bhavik
+                    Start conversation with Lethabo
                   </span>
                   <span className="ml-2 font-display text-lg italic">↗</span>
                 </button>
@@ -245,7 +245,7 @@ export function CallStage({
             <div className="h-[280px] overflow-y-auto px-6 py-4">
               {transcripts.length === 0 ? (
                 <p className="mt-12 text-center text-[14px] italic text-ink/40">
-                  The conversation transcript will appear here once Bhavik
+                  The conversation transcript will appear here once Lethabo
                   starts speaking.
                 </p>
               ) : (
@@ -264,7 +264,7 @@ export function CallStage({
                             : "text-rust"
                         }`}
                       >
-                        {t.speaker === "agent" ? "Bhavik" : "You"}
+                        {t.speaker === "agent" ? "Lethabo" : "You"}
                       </span>
                       <p
                         className={`text-[15px] leading-[1.5] ${
@@ -291,7 +291,7 @@ function humanStatus(s: Status) {
     case "idle": return "Connected · warming up";
     case "listening": return "Listening";
     case "thinking": return "Thinking";
-    case "speaking": return "Bhavik is speaking";
+    case "speaking": return "Lethabo is speaking";
     case "connecting": return "Connecting…";
     case "disconnecting": return "Ending call";
     case "disconnected": return "Ready";
