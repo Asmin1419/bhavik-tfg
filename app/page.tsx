@@ -33,7 +33,7 @@ export default function Home() {
             </p>
             <h1 className="font-display text-[68px] leading-[0.95] tracking-[-0.02em] md:text-[104px]">
               Meet{" "}
-              <span className="italic text-aubergine-600">Bhavik</span>.
+              <span className="italic text-aubergine-600">Lethabo</span>.
               <br />
               <span className="text-ink/40">The voice</span>
               <br />
@@ -69,7 +69,7 @@ export default function Home() {
             number="01"
             tag="Outbound"
             title="Collections"
-            description="Bhavik places considerate outbound calls to customers in arrears, confirms identity, discusses balances and arranges repayment commitments — replacing the linear cost of human headcount."
+            description="Lethabo places considerate outbound calls to customers in arrears, confirms identity, discusses balances and arranges repayment commitments — replacing the linear cost of human headcount."
             stat="24/7"
             statLabel="availability"
             href="/call?scenario=collections"
@@ -101,7 +101,7 @@ export default function Home() {
         aria-hidden
         className="pointer-events-none absolute -bottom-20 -right-20 select-none font-display text-[260px] leading-none tracking-tighter text-aubergine-600/[0.06]"
       >
-        Bhavik.
+        Lethabo.
       </div>
     </main>
   );
